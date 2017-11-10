@@ -1,0 +1,18 @@
+#1. cotroller :lotto
+#2. lotto#index :루트페이지
+#3. lotto#index : 버튼(로또번호추천)
+#4. lotto#show : 로또번호추천
+#5. lotto#api : 로또번호를 가져와서, array에 넣는다.
+-def api
+- Httparty.get()
+- json.parse()
+- 배열에 넣어준다.
+-end
+
+#rails g controller lotto index show
+#index.erb : <form></form>
+#lotto_controller.rb : 로또 번호 추천 로직 넣기
+-def show
+-   @lotto=로또추천코드
+-end
+# show.erb : 로또 번호 추천 결과를 보여주기
